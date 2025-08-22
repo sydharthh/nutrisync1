@@ -1,9 +1,12 @@
 {
   "name": "client",
-  "private": true,
+  "homepage": "https://sydharthh.github.io/nutrisync1/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist && copy dist\\index.html dist\\404.html",
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
@@ -25,6 +28,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "cpx": "^1.5.0",
     "eslint": "^9.9.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",

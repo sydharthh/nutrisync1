@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Components/Navbar'; // Adjust the path as necessary
+import Navbar from './Components/Navbar';
 import Home from './pages/Home';
 import Courses from './pages/Courses';
 import About from './pages/About';
@@ -27,16 +27,14 @@ import ItemDetailsPage from './pages/ItemDetailsPage';
 import Booking from './pages/Booking';
 import Nutrision from './pages/Nutrision';
 import PartnerOrders from './pages/PartnerOrders';
-import Chatbot from './pages/Chatbot'; // Import Chatbot
-
+import Chatbot from './pages/Chatbot';
 import FeedbackForm from "./pages/FeedbackForm";
-
 
 function App() {
   return (
-    <>
+    <Router basename="/nutrisync1">   {/* ✅ Router wrapper with correct base */}
       <Navbar />
-      <div className="">
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -48,7 +46,7 @@ function App() {
           <Route path="/mentor/dashboard/mealfoods" element={<SupplierDashboard />} />
           <Route path="/supplier/products" element={<ManageProductsSupplier />} />
           <Route path="/supplier/add-product" element={<AddProduct />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/about" element={<About />} />
 
           <Route path="/courses" element={<ProtectedRoute><Courses /></ProtectedRoute>} />
           <Route path="/courses/:id" element={<CourseDetails />} />
@@ -62,7 +60,7 @@ function App() {
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
           <Route path="/meals" element={<ProtectedRoute><ShopPage /></ProtectedRoute>} />
           <Route path="/item/:itemId" element={<ItemDetailsPage />} />
-          <Route path="/Shop" element={<ShopPage />} />
+          <Route path="/shop" element={<ShopPage />} />
           <Route path="/payment/:itemid/:price/product" element={<Booking />} />
           <Route path="/feedback" element={<FeedbackForm />} />
         </Routes>
@@ -70,7 +68,7 @@ function App() {
 
       {/* Chatbot Component */}
       <Chatbot />
-    </>
+    </Router>
   );
 }
 
