@@ -1,0 +1,35 @@
+#wrapper {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    --scroll: 0; /* Set this dynamically via JS */
+  }
+  
+  .scroll-height {
+    height: 800vh;
+  }
+  
+  .animated-div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation-name: mySpicyBoyAnimation;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll, 0) * -1s);
+    animation-duration: 1s;
+    box-shadow: 0 2px 22px #0008;
+  }
+  
+  @keyframes mySpicyBoyAnimation {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+      top: 100%;
+      left: 100%;
+    }
+  }
+  

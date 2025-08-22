@@ -1,0 +1,74 @@
+/* Background */
+.nutrition-container {
+    background: linear-gradient();
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Card Styling */
+  .card-custom {
+    background: rgba(235, 231, 231, 0.295);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(12, 33, 223, 0.2);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-custom:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Text Colors */
+  .text-highlight {
+    color: #ffcc00;
+    font-weight: bold;
+  }
+  
+  .text-accent {
+    color: #232fd1;
+  }
+  
+  /* Button Styling */
+  .btn-custom {
+    background-color: #392cb1;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: #594dff;
+    transform: scale(1.05);
+  }
+  
+  /* Sleep Tracking Box */
+  .sleep-box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sleep-box:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Loading Spinner */
+  .loading-spinner {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

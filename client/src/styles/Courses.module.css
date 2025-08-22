@@ -1,0 +1,92 @@
+/* Soft background with light pink theme */
+.container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #ffe6e6, #ffffff);
+    padding: 40px 20px;
+    color: #333;
+  }
+  
+  /* Loading and error messages */
+  .loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  /* Back button */
+  .backButton {
+    background-color: #ff99cc;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .backButton:hover {
+    background-color: #ff6699;
+  }
+  
+  /* Heading */
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #d63384;
+    text-shadow: 2px 2px 10px rgba(214, 51, 132, 0.2);
+  }
+  
+  /* Course card */
+  .courseCard {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .courseCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Course image */
+  .courseImage {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  /* Course title */
+  .cardTitle {
+    color: #d63384;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Course description */
+  .cardText {
+    color: #666;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Details button */
+  .detailsButton {
+    background: #ff99cc;
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .detailsButton:hover {
+    background: #ff6699;
+  }
+  

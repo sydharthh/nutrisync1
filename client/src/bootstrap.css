@@ -1,0 +1,50 @@
+/* Animation for fade-in effect */
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation for fade-in effect (subheader) */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the animation to specific elements */
+  .hero h1 {
+    animation: fadeInDown 1.5s ease-out forwards;
+    color: white;  /* Initial color */
+    animation: colorChange 3s ease-in-out infinite; /* Color change loop */
+  }
+  
+  .hero p {
+    animation: fadeInUp 2s ease-out forwards;
+    color: white;  /* Initial color */
+    animation: colorChange 3s ease-in-out infinite; /* Color change loop */
+  }
+  
+  /* Color change animation */
+  @keyframes colorChange {
+    0% {
+      color: white;  /* Start color */
+    }
+    50% {
+      color: black;  /* Mid color */
+    }
+    100% {
+      color: white;  /* End color */
+    }
+  }
+  
